@@ -13,7 +13,7 @@ x3 speed training record
 ![](images/training_r1.gif)
 
 ## Trained Result 
-Run the agent in different race tracks to test it performance 
+**Run the agent in different race tracks to test it performance** \
 On original race track
 
 ![](images/train_result_final1.gif)
