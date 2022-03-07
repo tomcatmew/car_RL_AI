@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1646656425",
+        "python_version": "3.9.5 (tags/v3.9.5:0a7dcbd, May  3 2021, 17:27:52) [MSC v.1928 64 bit (AMD64)]",
+        "command_line_arguments": "Z:\\phase_function_push5\\unity_rl\\venv\\Scripts\\mlagents-learn config/car_driver.yaml --run-id=newpara_3",
+        "mlagents_version": "0.28.0",
+        "mlagents_envs_version": "0.28.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.10.2+cu113",
+        "numpy_version": "1.22.2",
+        "end_time_seconds": "1646656491"
+    },
+    "total": 65.7497613,
+    "count": 1,
+    "self": 0.010658299999988685,
+    "children": {
+        "run_training.setup": {
+            "total": 0.15707190000000004,
+            "count": 1,
+            "self": 0.15707190000000004
+        },
+        "TrainerController.start_learning": {
+            "total": 65.58203110000001,
+            "count": 1,
+            "self": 0.0006951000000015028,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 65.5813163,
+                    "count": 1,
+                    "self": 65.5813163
+                },
+                "trainer_threads": {
+                    "total": 8.000000093488779e-07,
+                    "count": 1,
+                    "self": 8.000000093488779e-07
+                },
+                "TrainerController._save_models": {
+                    "total": 1.8900000000598993e-05,
+                    "count": 1,
+                    "self": 1.8900000000598993e-05
+                }
+            }
+        }
+    }
+}

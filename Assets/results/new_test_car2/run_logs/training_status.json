@@ -1,0 +1,29 @@
+{
+    "CarDrive": {
+        "checkpoints": [
+            {
+                "steps": 27265,
+                "file_path": "results\\new_test_car2\\CarDrive\\CarDrive-27265.onnx",
+                "reward": 24.342756271362305,
+                "creation_time": 1646650932.1025112,
+                "auxillary_file_paths": [
+                    "results\\new_test_car2\\CarDrive\\CarDrive-27265.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 27265,
+            "file_path": "results\\new_test_car2\\CarDrive.onnx",
+            "reward": 24.342756271362305,
+            "creation_time": 1646650932.1025112,
+            "auxillary_file_paths": [
+                "results\\new_test_car2\\CarDrive\\CarDrive-27265.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.10.2+cu113"
+    }
+}
