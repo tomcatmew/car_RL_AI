@@ -60,6 +60,8 @@ On random race track
 
 ![](images/car_agent.png)
 
+Higher number of hidden units or layers will cause overfitting
+
 Training Parameters
 ```
     trainer_type: ppo
