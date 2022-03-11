@@ -2,6 +2,17 @@
 A simple Reinforcement Learning Car AI using Proximal Policy Optimization
 Implementation using Unity ML-agent
 
+## Popular Methods
+*I used Blocks Method*
+### Checkpoint Training
+Setting a lot of checkpoint over the roads, the agent will learn how to reach the next checkpoint as fast as possible. \
+Usually car will shoot rays to detect the distance between car and checkpoint plane\
+**Advantages** : Easy to setup, fits any kinds of race track\
+**Disadvantages** : You have to manually set up checkpoint planes for the track. It can be done automatically, however it may come some failure cases where you have adjust by yourself. 
+### Blocks Training
+Separate the road track by blocks, different blocks will gives the agent a different desired direction. I used 3 different blocks, straight, turn left 90, turn right 90 degree.\
+**Advantages** : If the car trained to be able to handle all different blocks, then theoretically any kind of race track made by the default blocks could work well.
+**Disadvantages** : You only can use the race track made by the pre-defined blocks.
 
 - [Training](#training)
   - [Failure Train](#failure-train)
