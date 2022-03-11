@@ -23,7 +23,7 @@ It makes them hard to optimize to deal with a 180 degree left turn = 2 x 90 degr
 ### Successful Train
 Now the new track contains, left 90, right 90, left 180 (2x left 90), right 180 (2x right 90), and straight road at the beginning. \
 Agents could quickly adapts the all possible situations and weights are optimized to deal all kinds of turns. \
-![](images/all_possible.png)
+![](images/all_possible2.png)
 ```
 Step: 200000.
 Time Elapsed: 628.180 s. 
@@ -60,7 +60,7 @@ On random race track
 
 ![](images/car_agent.png)
 
-Higher number of hidden units or layers will cause overfitting
+*Higher number of hidden units or layers will cause overfitting*
 
 Training Parameters
 ```
