@@ -4,12 +4,26 @@ Implementation using Unity ML-agent
 
 
 - [Training](#training)
+  - [Failure Train](#failure-train)
+  - [Successful Train](#successful-train)
 - [Trained Result](#trained-result)
   - [Original Race Track](#trained-result)
   - [Random Race Track](#trained-result)
 - [My Method](#method)
 
 ## Training
+### Failure Train
+As you can see, the cars will always fail at the 180 degree left turn. \
+The reason is, I didn't include 180 left turn at the front part of the track, the agents spend too much iterations to learn how to 90 degree turns, and drive straight \
+It makes them hard to optimize to deal with a 180 degree left turn = 2 x 90 degree left turn because the neural network's weights are trained too much.\
+**Solution** is change a new track, make sure the new track includes all possible turns at beginning part of the track. So the cars could fully learn all possible turns. \
+![](images/car_fail_train.gif)
+
+
+### Successful Train
+Now the new track contains, left 90, right 90, left 180 (2x left 90), right 180 (2x right 90), and straight road at the beginning. \
+Agents could quickly adapts the all possible situations and weights are optimized to deal all kinds of turns. \
+![](images/all_possible.png)
 ```
 Step: 200000.
 Time Elapsed: 628.180 s. 
@@ -26,15 +40,23 @@ On original race track
 
 ![](images/train_result_final1.gif)
 
+On cycle race track
+
+![](images/cycle.gif)
+
 On random race track
 
 ![](images/train_result_final2.gif)
+
+3rd person view
+
+![](images/3rd_person.gif)
 
 ## Method
 ### Agent
 **Number of observation states** : 7 , including 6 rays check the surrounds, return the distance between car and wall, another extra state store the angle between car and desired moving direction \
 **Number of actions** : 2, forward speed and turning speed \
-**Reward**: take the displacement between 2 frames, if car going toward desired direction, giving a positive reward proportional to the displacement, 0 if going backward, -1 if hit wall
+**Reward**: take the displacement between 2 frames, if car going toward desired direction, giving a positive reward proportional to the displacement, 0 if going backward, -1 if hit wall and shut down simulation immediately. 
 
 ![](images/car_agent.png)
 
