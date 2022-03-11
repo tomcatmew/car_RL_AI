@@ -27,7 +27,7 @@ Separate the road track by blocks, different blocks will gives the agent a diffe
 As you can see, the cars will always fail at the 180 degree left turn. \
 The reason is, I didn't include 180 left turn at the beginning part of the track, the agents spend too much iterations to learn how to 90 degree turns, and drive straight \
 It makes them hard to optimize to deal with a 180 degree left turn = 2 x 90 degree left turn because the neural network's weights are trained too much.\
-**Solution** is change a new track, make sure the new track includes all possible turns at beginning part of the track. So the cars could fully learn all possible turns. \
+**Solution** is making a new track,and make sure the new track includes all possible turns at beginning part of the track. So the cars could fully learn all possible turns. \
 ![](images/car_fail_train.gif)
 
 
