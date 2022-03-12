@@ -11,7 +11,7 @@ Usually car will shoot rays to detect the distance between car and checkpoint pl
 **Advantages** : Easy to setup, fits any kinds of race track\
 **Disadvantages** : You have to manually set up checkpoint planes for the track. It can be done automatically, however it may come some failure cases where you have to adjust by yourself. 
 ### Blocks Method Environment
-Separate the road track by blocks, different blocks will gives the agent a different desired direction. I used 3 different blocks, straight, turn left 90, turn right 90 degree.\
+Separate the road track by blocks, different blocks will give the agent a different desired direction. I used 3 different blocks, straight, turn left 90, turn right 90 degree.\
 **Advantages** : If the car trained to be able to handle all different blocks, then theoretically any kind of race track made by the default blocks could work well.\
 **Disadvantages** : You only can use the race track made by the pre-defined blocks.
 
