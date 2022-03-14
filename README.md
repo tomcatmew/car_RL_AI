@@ -2,6 +2,17 @@
 A simple Reinforcement Learning Car AI using Proximal Policy Optimization\
 Implementation using Unity ML-agent
 
+- [Environment Setup](#popular-environment-setup)
+  - [Checkpoint Method Environment](#checkpoint-method-environment)
+  - [Blocks Method Environment](#blocks-method-environment)
+- [Training](#training)
+  - [Failure Train](#failure-train)
+  - [Successful Train](#successful-train)
+- [Trained Result](#trained-result)
+  - [Original Race Track](#trained-result)
+  - [Random Race Track](#trained-result)
+- [My Car Agent Setup](#method)
+
 ## Popular Environment Setup
 There are many different methods to set up the environment\
 *I used Blocks Method*
@@ -15,20 +26,12 @@ Separate the road track by blocks, different blocks will give the agent a differ
 **Advantages** : If the car trained to be able to handle all different blocks, then theoretically any kind of race track made by the default blocks could work well.\
 **Disadvantages** : You only can use the race track made by the pre-defined blocks.
 
-- [Training](#training)
-  - [Failure Train](#failure-train)
-  - [Successful Train](#successful-train)
-- [Trained Result](#trained-result)
-  - [Original Race Track](#trained-result)
-  - [Random Race Track](#trained-result)
-- [My Method](#method)
-
 ## Training
 ### Failure Train
 As you can see, the cars will always fail at the 180 degree left turn. \
-The reason is, I didn't include 180 left turn at the beginning part of the track, the agents spend too much iterations to learn how to 90 degree turns, and drive straight \
-It makes them hard to optimize to deal with a 180 degree left turn = 2 x 90 degree left turn because the neural network's weights are trained too much.\
-**Solution** is making a new track,and make sure the new track includes all possible turns at beginning part of the track. So the cars could fully learn all possible turns. \
+The reason is, I didn't include **180 left turn** at the beginning part of the track, the agents spend too much iterations to learn how to **90 degree turns, and drive straight** \
+It makes them hard to optimize to deal with a **180 degree left turn** because the neural network's weights are trained too much iternations with **90 degree turns**.\
+**Solution** is making a new track,and make sure the new track includes all possible turns at beginning part of the track. So the cars could fully learn all possible turns by taking advantages of initial random sampled action. \
 ![](images/car_fail_train.gif)
 
 
