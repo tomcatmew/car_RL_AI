@@ -2,7 +2,7 @@
 A simple Reinforcement Learning Car AI using Proximal Policy Optimization\
 Implementation using Unity ML-agent
 
-## Popular Methods
+## Popular Environment Setup
 There are many different methods to set up the environment\
 *I used Blocks Method*
 ### Checkpoint Method Environment
