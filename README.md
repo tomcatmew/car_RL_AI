@@ -3,16 +3,16 @@ A simple Reinforcement Learning Car AI using Proximal Policy Optimization\
 Implementation using Unity ML-agent
 
 Contents - 目次
-- [Environment Setup](#popular-environment-setup)
+- [Environment Setup - 環境の設定](#popular-environment-setup)
   - [Checkpoint Method Environment](#checkpoint-method-environment)
   - [Blocks Method Environment](#blocks-method-environment)
-- [Training](#training)
+- [Training - 学習](#training)
   - [Failure Train](#failure-train)
   - [Successful Train](#successful-train)
-- [Trained Result](#trained-result)
+- [Trained Result - 学習結果](#trained-result)
   - [Original Race Track](#trained-result)
   - [Random Race Track](#trained-result)
-- [My Car Agent Setup](#method)
+- [Method - 実現方法](#method)
 
 ## Popular Environment Setup
 There are many different methods to set up the environment\
