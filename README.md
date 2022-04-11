@@ -26,8 +26,9 @@ Usually car will shoot rays to detect the distance between car and checkpoint pl
 Separate the road track by blocks, different blocks will give the agent a different desired direction. I used 3 different blocks, straight, turn left 90, turn right 90 degree.\
 **Advantages** : If the car trained to be able to handle all different blocks, then theoretically any kind of race track made by the default blocks could work well.\
 **Disadvantages** : You only can use the race track made by the pre-defined blocks.
-![left](images/trackleft.png)![right](images/trackright.png)![foward](images/trackstraight.png)
-
+<img src="images/trackleft.png" alt="drawing1" width="200"/>
+<img src="images/trackright.png" alt="drawing2" width="200"/>
+<img src="images/straight.png" alt="drawing3" width="200"/>
 
 ## Training
 ### Failure Train
