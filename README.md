@@ -15,8 +15,9 @@ Contents - 目次
 - [Method - 実現方法](#method)
 
 ## Popular Environment Setup
-There are many different methods to set up the environment\
-*I used Blocks Method*
+There are many different methods to set up the environment, and many methods are heuristic. They are flexible for changes based on the goal you want to achieve during the training process.
+
+In my implementation, my method is mainly based on *Blocks Method* which will be explained in following section.
 ### Checkpoint Method Environment
 Setting a lot of checkpoint over the roads, the agent will learn how to reach the next checkpoint as fast as possible. \
 Usually car will shoot rays to detect the distance between car and checkpoint plane\
